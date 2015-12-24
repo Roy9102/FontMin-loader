@@ -4,9 +4,8 @@
 * @Description:        For font Subset
 * @Email:              chenxuezhong@360.cn
 * @Last Modified by:   Roy
-* @Last Modified time: 2015-12-24 18:11:59
+* @Last Modified time: 2015-12-24 18:53:58
 */
-
 
 
 var loaderUtils = require("loader-utils");
