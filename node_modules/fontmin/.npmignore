@@ -1,0 +1,10 @@
+.DS_Store
+.editorconfig
+.travis.yml
+npm-debug.log
+fonts/
+test/
+node_modules/
+fontmin.png
+TODO.md
+CHANGELOG.md
