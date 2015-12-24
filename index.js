@@ -4,14 +4,14 @@
 * @Description:        For font Subset
 * @Email:              chenxuezhong@360.cn
 * @Last Modified by:   Roy
-* @Last Modified time: 2015-12-24 18:53:58
+* @Last Modified time: 2015-12-24 21:20:13
 */
 
 
 var loaderUtils = require("loader-utils");
 var mime        = require("mime");
 var fontMinTool = require('./tools/fontMinTool.js');
-
+var Extension = require('./tools/extension.js');
 var FontSubset = function(source){
 	
 	var callback = this.async();		//转为异步执行
@@ -20,6 +20,7 @@ var FontSubset = function(source){
 	if(!this.emitFile) throw new Error("emitFile is required from module system");
 	
 	var query = loaderUtils.parseQuery(this.query);
+	query.ext = Extension.getExtension(this.resourcePath);
 
 	var getFontSubset = new fontMinTool({			//创建取子集任务
 		srcPath:this.resourcePath,
@@ -41,7 +42,7 @@ var FontSubset = function(source){
 		
 		}else{		//生成指定字体文件
 
-			var url = loaderUtils.interpolateName(this, query.name + '.' + query.ext, {
+			var url = loaderUtils.interpolateName(this, query.name || '[name].[ext]', {
 				context: query.context || this.options.context,
 				content: FontSubsetContent,
 				regExp: query.regExp

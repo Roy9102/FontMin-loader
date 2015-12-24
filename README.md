@@ -23,6 +23,6 @@
  
 {
 		test:   /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-		loader: 'fontSubset?limit="10240&name=fonts/[name]&ext=woff&text=helloworld',
+		loader: 'fontSubset?limit="10240&name=fonts/[name].[ext]=woff&text=helloworld',
 }
 ```
