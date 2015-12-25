@@ -1,6 +1,6 @@
 # FontMin-loader
 - 这是一个基于fontmin的webpack 加载器，用于取字体子集
-- a Webpack loader of FontSubset
+- a Webpack loader of FontMin
 - @monkindey Tanks for your great idea;
 
 ##Useage
