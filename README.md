@@ -4,9 +4,9 @@
 - @monkindey Thanks for your great idea;
 
 ##Getting start
-
-- npm install fontmin-loader
-
+<code>
+	npm install fontmin-loader
+</code>
 ##Useage
 
 [Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
