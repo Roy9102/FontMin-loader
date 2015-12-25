@@ -1,7 +1,11 @@
 {
-  "name": "FontMin-loader",
+  "name": "fontmin-loader",
   "version": "0.0.1",
   "description": "get font Subset",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roy9102/FontMin-loader.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "test"
@@ -14,5 +18,10 @@
     "fontmin": "^0.8.1",
     "loader-utils": "^0.2.12",
     "mime": "^1.3.4"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Roy9102/FontMin-loader/issues"
+  },
+  "homepage": "https://github.com/Roy9102/FontMin-loader#readme",
+  "license": "ISC"
 }
