@@ -3,6 +3,10 @@
 - a Webpack loader of FontMin
 - @monkindey Thanks for your great idea;
 
+##Getting start
+
+- npm install fontmin-loader
+
 ##Useage
 
 [Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
