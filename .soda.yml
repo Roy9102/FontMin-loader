@@ -1,0 +1,2 @@
+# image: mac windows php nodejs
+from: ${1:image}
