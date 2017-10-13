@@ -1,5 +1,6 @@
 # image: mac windows php nodejs
 from: ${1:image}
 
+vm: ${1:vmName1,vmName2}
 
 vm: ${1:vmName1,vmName2}
