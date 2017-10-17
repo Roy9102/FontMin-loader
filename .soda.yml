@@ -1,6 +1,14 @@
-# image: mac windows php nodejs
-from: ${1:image}
+from: mac
 
-vm: ${1:vmName1,vmName2}
+scm:
+  increment: true
+  checkout: true
 
-vm: ${1:vmName1,vmName2}
+envs:
+  version: 3.0.1
+
+stages:
+  build:
+    # 向构建主机安装SODA提供的企业签名证书
+    - pwd
+    - ls
