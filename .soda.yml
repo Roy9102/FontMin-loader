@@ -10,5 +10,4 @@ envs:
 stages:
   build:
     # 向构建主机安装SODA提供的企业签名证书
-    - pwd
-    - ls
+    - dir
