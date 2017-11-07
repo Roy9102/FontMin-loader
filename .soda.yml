@@ -13,4 +13,3 @@ stages:
     - dir
     - npm install
     - npm update
-    - npm i
