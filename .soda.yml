@@ -13,3 +13,4 @@ stages:
     - dir
     - npm install
     - ll
+    - ls
